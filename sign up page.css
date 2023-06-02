@@ -1,0 +1,124 @@
+:root{
+    --color1:#666665;
+    --color2:#e5e4e2;
+    --color3:#e3e4e6;
+    /* --color4:#dfa437; */
+    /* --color5:#efbf00; */
+    --color6:#b3b2b1;
+    --color4:#948a99;
+    --color7:#798699;
+    --color8:red;
+    --color9:rgba(235, 18, 18, 0.764);
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,700;1,400&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color:var(--color3);
+    width: 100%;
+  
+    font-size: 16px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+header img{
+    display: block;
+    margin: 0 auto;
+    height:200px;
+    width:250px;  
+    position: fixed;
+    align-items: center;
+    top: 0;
+}
+h1,p{
+    text-align: center;
+    color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+    
+}
+h1{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+label{
+    display: block;
+}
+input{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    min-height: 2em;
+    border-radius: 15px;
+    border: none;
+}
+.left{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+form{
+    max-width: 500px;
+    min-width: 400px;
+    margin: 0 auto;
+   
+    height: auto;
+    padding: 20px;
+    background-color:var(--color2);
+}
+fieldset{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 30px;
+}
+fieldset:last-of-type{
+    border-bottom: none;
+}
+.inline{
+    width: unset;
+    margin-right:0.5em;
+    margin-left:0;
+    margin-top:0;
+    margin-bottom:0;
+    vertical-align: middle;
+}
+.divider{
+    border-bottom: 1px solid ;
+    margin: 30px 0;
+    
+}
+.facebook{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+button{
+    font-size: 1.5em;
+    background-color: #1877f2;
+    color: white;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: none;
+    width: 500px;
+}
+button:hover{
+    background-color: darkblue;
+}
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    margin: 1em auto;
+    height:2em;
+    font-size: 1.1rem;
+    background-color:  black;
+    color: white;
+    border:none;
+    border-radius: 10px;
+  }
+input[type="submit"]:hover{
+    background-color: #222;
+}

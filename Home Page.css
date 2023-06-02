@@ -1,0 +1,254 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Baskervville&family=Lato&display=swap');
+:root{
+    --color1:#666665;
+    --color2:#e5e4e2;
+    --color3:#e3e4e6;
+    /* --color4:#dfa437; */
+    /* --color5:#efbf00; */
+    --color6:#b3b2b1;
+    --color4:#948a99;
+    --color7:#798699;
+    --color8:red;
+    --color9:rgba(235, 18, 18, 0.764);
+   
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pagewrapper{
+   position: relative;
+}
+body{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+
+header{
+    position: fixed;
+    min-width: 200px;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+}
+@media screen and (max-width:600px) {
+    header{
+     width: 100%;
+    
+    }
+    li{
+        padding: 0;
+        border-bottom: none;
+    }
+    
+}
+nav >ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;  
+}
+@media (max-width:600px){
+    nav>ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        border: 1px solid transparent;
+        z-index: 1;
+        background-color: var(--color1);
+
+    }
+}
+li{
+    list-style-type: none;
+    padding: 10px 30px;
+    border-bottom: 1px solid var(--color7);
+}
+@media screen and (max-width:600px) {
+    li{
+        padding: 10px;
+        border-bottom: none;
+    }
+}
+a{
+    color: var(--color1);
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 0 10px;
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+}
+a:hover{
+    background-color: var(--color1);
+    color: var(--color2);
+}
+#logoimage >img{
+    display: block;
+    margin: 0 auto;
+    height:200px;
+    width:250px;  
+    position: fixed;
+    top: 0;
+    right: 0;    
+}
+@media (max-width:600px){
+    #logoimage >img{
+        display: none;
+    }
+}
+.container{
+    margin: 0 auto;
+    max-width: 950px;
+    width: 100%;
+    margin-top: 150px;
+}
+@media (max-width:600px) {
+    .container{
+        max-width:400px;
+        width:50%;
+    }
+}
+.flex{
+    width: 1000px;
+    height: 400px;
+    background:var(--color4);
+    margin: 120px auto;
+    display: flex;
+    position: relative;
+    }
+    @media (max-width:600px){
+        .flex{
+            display:none;
+        
+        }
+    }
+
+
+.flex1{
+    height: 100%;
+    flex: 1;
+    color:var(--);
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+    transition: 1s;
+    /* border: 1px solid var(--color3); */
+}
+.flex1 img{
+    width: 200px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+    
+
+.flex1:nth-child(1){
+    background:var(--color7);
+}
+.flex1:nth-child(2){
+     background: var(--color4);
+}
+.flex1:nth-child(3){
+    background:var(--color7);
+}
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'baskerville', sans-serif;
+    text-transform: capitalize;
+}
+.flex1 >p{
+    max-width: 230px;
+    font-size: 17px;
+    margin: 28px 0;
+    display: none;
+    font-family: 'Lato', sans-serif;
+}
+.flex1:hover {
+    flex-grow: 2.0;
+}
+.flex1:hover p{
+    display: block;
+}
+.flex1:hover h1{
+    text-align: left;
+}
+
+.pricing-container{
+    display: flex;
+    max-width: 1000px;
+   width: 100%;
+}
+@media (max-width:600px){
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--color4);
+    font-family: 'lato', sans-serif;
+    border: 1px solid var(--color3); 
+    align-items: center;
+    margin: 10px;
+    width: calc(100% / 3);  
+
+}
+.h2-div{    
+    text-align: center;
+    text-transform: capitalize;
+ 
+    background-color:var(--color7);
+    color: var(--color2);
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.product >img{
+    width: 100%;
+    height: 300px;
+}
+.product >button{
+   text-align: center;
+   margin: 10px 0;
+   padding: 10px 30px ;
+   color: var(--color2);
+   background-color: var(--color8);
+   border: none;
+}
+.product >button:hover{
+    background-color: var(--color9);
+    transition: 1s;
+}
+.gallery img{
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+     object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--color3);
+ 
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    max-width: 1200px;
+    margin: 250px auto;
+    gap: 16px;
+
+}.gallery::after{
+    content: "";
+    width: 400px;
+}
